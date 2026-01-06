@@ -1,0 +1,9 @@
+all/
+node_modules/
+spark_test/
+spark-keeper/
+*data*/
+*pycache*/
+dist_release/
+*.swp
+*.env
