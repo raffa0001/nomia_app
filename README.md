@@ -1,4 +1,4 @@
-# Spark Keeper
+# Nomia App
 
 A lightweight, Electron client for the Nomia Market.
 
@@ -7,7 +7,7 @@ A lightweight, Electron client for the Nomia Market.
 You can download the latest version from the **[Releases]** page (or your specific download location).
 
 ### 🪟 Windows (.exe)
-1. Download `spark-keeper-setup.exe` from the latest release.
+1. Download `spark-setup.exe` from the latest release.
 2. Double-click the file to launch the installer.
 3. The app will install and launch automatically.
    > **Note:** If you see a "Windows protected your PC" (SmartScreen) warning, click **More info** -> **Run anyway**. This happens because the app is self-signed.
@@ -15,15 +15,15 @@ You can download the latest version from the **[Releases]** page (or your specif
 ### 🐧 Linux (.AppImage)
 The AppImage format works on most Linux distributions (Ubuntu, Debian, Fedora, Arch, etc.) without installation.
 
-1. Download `spark-keeper.AppImage`.
+1. Download `Nomia.AppImage`.
 2. Open your terminal and navigate to the download folder.
 3. Make the file executable:
    ```bash
-   chmod +x spark-keeper.AppImage
+   chmod +x Nomia.AppImage
    ```
 4. Run the app:
    ```bash
-   ./spark-keeper.AppImage
+   ./Nomia.AppImage
 
 ---
 
@@ -38,10 +38,10 @@ If you prefer to build the application yourself:
 ### 1. Clone & Install
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/spark-keeper.git
+git clone https://github.com/your-username/Nomia.git
 
 # Enter the directory
-cd spark-keeper
+cd Nomia
 
 # Install dependencies
 npm install
