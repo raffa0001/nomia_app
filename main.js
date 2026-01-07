@@ -3,7 +3,7 @@ const { app, BrowserWindow, Menu, Tray, nativeImage, shell, ipcMain } = require(
 const path = require('path');
 
 // --- CONFIGURATION ---
-const DASHBOARD_URL = "http://nomia.website/vendor/dashboard";
+const DASHBOARD_URL = "http://localhost:3000/vendor/dashboard";
 
 let mainWindow;
 let tray;
@@ -13,7 +13,7 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
-        title: "Spark Keeper",
+        title: "Nomia",
         icon: path.join(__dirname, 'icon.png'),
 
                                    // 1. REMOVE NATIVE TITLE BAR
@@ -84,7 +84,7 @@ function createTray() {
                                                { label: 'Hide', click: () => mainWindow.hide() },
                                                { type: 'separator' },
                                                {
-                                                   label: 'Quit Spark Keeper',
+                                                   label: 'Quit Nomia',
                                                    click: () => {
                                                        isQuiting = true;
                                                        app.quit();
@@ -92,7 +92,7 @@ function createTray() {
                                                }
     ]);
 
-    tray.setToolTip('Spark Keeper - Node Online');
+    tray.setToolTip('Nomia - Node Online');
     tray.setContextMenu(contextMenu);
 
     tray.on('click', () => {
